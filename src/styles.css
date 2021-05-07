@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.white {
+  color: #fff;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(85, 85, 85);
+}
+
+.header {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/means/banner.jpg");
+  background-position: bottom;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 80px;
+  margin: 30px;
+}
+
+.header p {
+  margin: 30px 10px;
+}
+
+.t-placeholders {
+  text-align: center;
+}
+
+.t-placeholders .description {
+  font-size: 25px;
+}
+
+.reset {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  font-size: 20px;
+  background-color: #960606;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.reset:hover {
+  background-color: #cc0909;
+  transition: all 0.5s ease;
+}
+
+.reset img {
+  width: 30px;
+}
+
+.icons-form {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  padding: 0 0 0 35px;
+}
+
+.size {
+  background-image: url("./images/means/bed-black.svg");
+}
+
+.price-icon {
+  background-image: url("./images/means/price-black.svg");
+}
+
+.country-icon {
+  background-image: url("./images/means/world.svg");
+}
+
+.dateFrom {
+  background-image: url("./images/means/exit.svg");
+}
+
+.dateTo {
+  background-image: url("./images/means/entry.svg");
+}
+
+.container-filters,
+.container-header {
+  width: 100%;
+}
+
+.filters {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -100px;
+  padding: 0 20px;
+  background-color: rgb(0 0 0 / 70%);
+}
+
+.filters input,
+select {
+  width: 20%;
+  height: 50px;
+  margin: 0 5px;
+  font-family: "Ropa Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+  border: none;
+}
+
+.hotel-results {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.hotel-container {
+  width: 400px;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 30px 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px #00000080;
+  color: #000;
+}
+
+.hotel-img img {
+  width: 100%;
+}
+
+.hotel-info {
+  padding: 20px;
+}
+
+.hotel-info h2 {
+  margin: 0;
+  color: #000;
+}
+
+.hotel-info p {
+  margin: 0px;
+}
+
+.hotel-info .description {
+  margin: 20px 0;
+  height: 100px;
+  overflow-y: scroll;
+}
+
+.country {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(232 230 230);
+}
+
+.country img {
+  width: 55px;
+  padding: 10px;
+  background-color: rgb(8, 142, 196);
+}
+
+.country p {
+  width: 100%;
+  text-align: center;
+}
+
+.rooms-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  background-color: rgb(232 230 230);
+}
+
+.rooms-price img {
+  width: 55px;
+  padding: 10px;
+  background-color: rgb(8, 142, 196);
+}
+
+.rooms-price p {
+  width: 100%;
+  text-align: center;
+}
+
+.price {
+  width: 70%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+  background-color: rgb(8, 142, 196);
+  color: #fff;
+  font-size: 22px;
+}
+
+.price img {
+  width: 40px;
+  padding: 5px;
+}
+
+button {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 20px;
+  background-color: #0e882e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #08611f;
+  transition: all 0.5s ease;
+}
+
+@keyframes error {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 300px;
+  }
+}
+
+@keyframes error_content {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.error {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(150 17 8);
+  animation: error 1s ease;
+  color: #fff;
+  font-size: 20px;
+}
+
+.error img {
+  width: 150px;
+  margin-bottom: 30px;
+  animation: error_content 2s ease;
+}
+
+.error p {
+  animation: error_content 1s ease;
+}
